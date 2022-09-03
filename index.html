@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      USSD Form
+    </title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <h1>
+      Welcome to Access USSD
+    </h1>
+    <p>
+      Please fill out this form to perform transaction
+    </p>
+    <form action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label>Select transaction:</label>
+          <select name="transactions" id="operations">
+            <option value="">(select one)</option>
+            <option value="checkBalance">Check Balance</option>
+            <option value="transfer">Transfer</option>
+            <option value="airtime">Airtime</option>
+            <option value="otherServices">Other Services</option>
+            <option value="accessMoney">Access Money</option>
+            <option value="xtra">Diamond Xtra</option>
+            <option value="xtraCash">XtraCash Loan</option>
+            <option value="mobileWallet">Mobile Wallet</option>
+            <option value="fastPay">POS FastPay</option>
+          </select>
+          <label for="" id="errorSelect" class="errorSelect"></label>
+        
+      </fieldset>
+      <fieldset>
+        <label>Select Account </label>
+          <label>
+            <input type="radio" name="accountType" class="inline" /> 011XXXX112
+          </label>
+          <label>
+            <input type="radio" name="accountType" class="inline" /> 011XXXX222
+          </label>
+          <label id="SAEmess" class="errorSelect"></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Enter Amount:  
+        </label>
+        <input type="number" name="Amount" id='amount'/>
+        <label id="eAmount" class="errorSelect"></label>
+      </fieldset>
+      <fieldset>
+        <label id="accountNoDis">
+          Enter Account Number: 
+        </label>
+        <input type="number" name="AccountNumber"
+            id="accountNo" />
+        <label id="eAccNo" class="errorSelect"></label>
+      </fieldset>
+      <fieldset id="bankOptionDis">
+        <label>Select Beneficiary Bank</label>
+          <select name="BeneficiaryBank" id="BankOption">
+            <option value="">(Select Bank)</option>
+            <option value="FCMB">First City Monument Bank</option>
+            <option value="EcoBank">EcoBank</option>
+            <option value="FirstBank">FirstBank</option>
+            <option value="Fidelity">Fidelity Bank</option>
+            <option value="Access">Access Bank</option>
+            <option value="Opay">Opay</option>
+            <option value="Carbon">Carbon</option>
+            <option value="JIAZ">JIAZ Bank</option>
+          </select>
+        <label id="eBankOption" class="errorSelect"></label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Enter Pin: 
+        </label>
+        <input type="password" name="last-name"
+            id="passwordNo" />
+        <label id="ePasswordNo" class="errorSelect"></label>
+      </fieldset>
+      <input type="button" value="Submit" id="btn"/>
+      <label id="mess">
+        Don't Hesitate
+      </label>
+    </form>
+  </body>
+  <script src="js/main.js"></script>
+</html>
